@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Finda</title>
+    <title>FINDA</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -21,7 +21,7 @@
 
     <!-- Navigation bar -->
 
-    <nav class="navbar sticky-top bg-light navbar-light navbar-expand-lg navbar-fixed-top">
+    <nav class="navbar sticky-top bg-light navbar-dark navbar-expand-lg navbar-fixed-top">
         <div class="container">
             <a href="index.html" class="navbar-brand"><span id="logo" title="logo">FINDA</span></a>
 
@@ -53,39 +53,53 @@
      <h1 id="heading" class="pt-1">I want to learn</h1>
  </div>
 
+ <div id="overlay">
+    <div class="cv-spinner">
+      <span class="spinner"></span>
+    </div>
+  </div>
+
  <div class="container">
     <div class="row my-5">
         <div class="col-md-6 my-4">
+            <a href="#" rel="noopener noreferrer" id="register">
             <div class="review-box">
                 <img src="img/savings.svg" width="100px" alt="" class="review-box-img mx-auto d-block">
                 <p class="review-box-para text-center" style="font-size: 30px;">CPF</p>
                 <p class="review-box-para font-weight-bold text-center">Basic</p>
             </div>
+        </a>
         </div>
 
         <div class="col-md-6 my-4">
+            <a href="quiz.html" rel="noopener noreferrer" id="register">
             <div class="review-box">
                 <img src="img/investing.svg" width="100px" alt="" class="review-box-img mx-auto d-block">
-                <p class="review-box-para text-center" style="font-size: 30px;">Investing</p>
-                <p class="review-box-para font-weight-bold text-center">Intermediate</p>
+                <p class="review-box-para text-center" style="font-size: 30px;">Financial Instrument</p>
+                <p class="review-box-para font-weight-bold text-center">Basic</p>
             </div>
+        </a>
         </div>
 
         
             <div class="col-md-6 my-4">
+                <a href="quiz.html" rel="noopener noreferrer" id="register">
                 <div class="review-box">
                     <img src="img/options.svg" width="100px" alt="" class="review-box-img mx-auto d-block">
-                    <p class="review-box-para text-center" style="font-size: 30px;">Options Trading</p>
-                    <p class="review-box-para font-weight-bold text-center">Advanced</p>
+                    <p class="review-box-para text-center" style="font-size: 30px;">Financial Planning</p>
+                    <p class="review-box-para font-weight-bold text-center">Intermediate</p>
                 </div>
+            </a>
             </div>
     
             <div class="col-md-6 my-4">
                 <div class="review-box">
-                    <img src="img/analyse.svg" width="100px" alt="" class="review-box-img mx-auto d-block">
-                    <p class="review-box-para text-center" style="font-size: 30px;">Technical Analyse</p>
-                    <p class="review-box-para font-weight-bold text-center">Advanced</p>
+                    <a href="quiz.html" rel="noopener noreferrer" id="register">
+                    <img src="img/analyse.svg" width="130px" alt="" class="review-box-img mx-auto d-block">
+                    <p class="review-box-para text-center" style="font-size: 30px;">Learn to Invest</p>
+                    <p class="review-box-para font-weight-bold text-center">Expert</p>
                 </div>
+            </a>
             </div>
     
 
@@ -103,12 +117,14 @@
 
 
    <!-- jQuery -->
-   <script src="js/jquery-3.5.1.slim.min.js"></script>
+   <script src="js/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Popper JS  -->
     <script src="js/popper.min.js"></script>
      <!-- FontAwesome JS -->
      <script src="js/all.min.js"></script>
+     <!-- Main JS -->
+     <script src="js/app.js"></script>
   </body>
 </html>

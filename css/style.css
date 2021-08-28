@@ -51,6 +51,7 @@ nav .navbar .bg-light {
     background-color: white !important;
 }
 
+
 .navbar {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -71,7 +72,7 @@ nav .navbar .bg-light {
 }
 
 .nav-link {
-    color: white !important;
+    color: lightgrey !important;
 }
 
 #nav-link:hover {
@@ -130,7 +131,7 @@ h3#subheading2 {
 }
 
 .review-box-img {
-    padding-top: 2%;
+    padding-top: 5%;
 }
 
 
@@ -148,10 +149,9 @@ h3#subheading2 {
 
 .text{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 10%;
-    padding-left: 10%;
     font-style: normal;
     font-weight: bold;
+    padding-top: 10%;
     font-size: 25px;
     line-height: 140.62%;
     color: #000000;
@@ -181,16 +181,6 @@ h3#subheading2 {
     color: #000000;
 }
 
-.review-box-para {
-    font-family: Lato;
-    margin-left: 10%;
-    max-width: 80%;
-    min-height: 60%;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 140.62%;
-}
 
 
 .review-box-para {
@@ -202,8 +192,6 @@ h3#subheading2 {
     font-weight: normal;
     font-size: 15px;
     line-height: 140.62%;
-    padding-left: 20%;
-    padding-right: 30%;
     padding-bottom: 20px;
     padding-top: 10px;
     
@@ -733,6 +721,67 @@ form .txt_field {
     box-shadow: 0 0 100px rgba(0,0,0,0.5) inset;
 }
 
+
+#overlay{	
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height:100%;
+    display: none;
+    background: rgba(0,0,0,0.6);
+  }
+
+  .cv-spinner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px #ddd solid;
+    border-top: 4px #2e93e6 solid;
+    border-radius: 50%;
+    animation: sp-anime 0.8s infinite linear;
+  }
+  @keyframes sp-anime {
+    100% { 
+      transform: rotate(360deg); 
+    }
+  }
+  .is-hide{
+    display:none;
+  }
+
+
+.loading-container {
+    position: relative;
+    width: 60%;
+    height: 10px;
+    border-radius: 25px;
+    background-color: lightgrey;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .load-bar {
+    width: 0%;
+    height: 10px;
+    background-color: #6C63FF;
+    transition: 1s;
+  }
+
+#exit {
+    font-size: 1.5em;
+}
+
+.homepage-times {
+    position: absolute;
+    margin: 8% 0 20px 50px;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     .footer-2, .footer-3 .mobile-v{
@@ -741,6 +790,27 @@ form .txt_field {
     .mobile-v {
         display: none;
     }
+
+    h1#title {
+        font-size: 2em;
+    }
+
+    h3#subtitle {
+        font-size: 1em;
+    }
+
+    h1#heading {
+        font-size: 1.5em;
+    }
+
+    h3#subheading2 {
+        font-size: 1em;
+    }
+
+    .jumbotron {
+        height: 100vh;
+    }
+    
 
 }
 
@@ -752,6 +822,24 @@ form .txt_field {
     .mobile-v {
         display: none;
     }
+
+    h1#title {
+        font-size: 2em;
+    }
+
+    h3#subtitle {
+        font-size: 1em;
+    }
+
+    h1#heading {
+        font-size: 2em;
+    }
+
+    h3#subheading2 {
+        font-size: 1em;
+    }
+
+
  }
 
 /* Medium devices (tablets, 768px and up) */
