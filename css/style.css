@@ -782,6 +782,11 @@ form .txt_field {
     margin: 8% 0 20px 50px;
 }
 
+.hidden {
+    display: none;
+    transform: translateY(20%);
+  }
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     .footer-2, .footer-3 .mobile-v{

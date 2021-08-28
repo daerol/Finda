@@ -20,14 +20,14 @@ jQuery(function($){
 
 var step = $('.loading-container').innerWidth() / 3 + 10;
 var i = 0;
-var i2 = 5;
+var i2 = 3;
 
 $('.next').click(function() {
   $('.load-bar').css('width', '+=' + step);
   $('.prev').removeClass('hidden');
   i++;
   i2--;
-  if(i==2) {
+  if(i==3) {
     $('.next').addClass('hidden');
   }
 });
@@ -37,7 +37,7 @@ $('.prev').click(function() {
   $('.next').removeClass('hidden');
   i2++;
   i--;
-  if(i2==2) {
+  if(i2==3) {
     $('.prev').addClass('hidden');
   }
 });

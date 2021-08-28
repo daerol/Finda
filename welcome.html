@@ -40,17 +40,17 @@
     <!-- Main content -->
    
 
- <div class="col-12 text-center mt-5">
-     <h1 id="heading" class="pt-1">How much of Financial Stuff do you know?</h1>
- </div>
+ 
 
 
 
- <div class="container">
-    <div class="row align-items-center my-5">
+ <div class="container"> <!-- Start of Container -->
+    <div class="col-12 text-center mt-5">
+        <h1 id="heading" class="pt-1">How much of Financial Stuff do you know?</h1>
+    </div>
 
-              
-        <div class="col-8 text-center justify-content-lg-center mt-5">
+    <div class="row align-items-center my-5" id="step1">    
+        <div class="col-12 text-center justify-content-lg-center mt-5">
             <div class="list-group" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active" id="list-first-list" data-bs-toggle="list" href="#first" aria-controls="list-first">Beginner</a>
                 <a class="list-group-item list-group-item-action" id="list-second-list" data-bs-toggle="list" href="#second" aria-controls="list-second">Intermediate</a>
@@ -60,13 +60,44 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center"></div>
-       
-    <div class="col-12 text-center mt-5"><a type="button" iud style="width: 50%;" class="btn btn-primary btn-block next">Get Started</a></div>
+    
+</div> <!-- End of Container -->
 
-    </div>          
 
+<div class="container hidden" id="step2"> <!-- Start of Container -->
+    <div class="col-12 text-center mt-5">
+        <h1 id="heading" class="pt-1">Great! How much do you wanna learn?</h1>
     </div>
+
+    <div class="row align-items-center my-5" id="step1">    
+        <div class="col-12 text-center justify-content-lg-center mt-5">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-first-list" data-bs-toggle="list" href="#first" aria-controls="list-first">5 mins/day</a>
+                <a class="list-group-item list-group-item-action" id="list-second-list" data-bs-toggle="list" href="#second" aria-controls="list-second">10 mins/day</a>
+                <a class="list-group-item list-group-item-action" id="list-third-list" data-bs-toggle="list" href="#third" aria-controls="list-messages">15 mins/day</a>
+                <a class="list-group-item list-group-item-action" id="list-fourth-list" data-bs-toggle="list" href="#fourth" aria-controls="list-fourth">20 mins/day</a>
+            
+            </div>
+        </div>
+    </div>
+    
+</div> <!-- End of Container -->
+
+  <!-- Buttons -->
+    <div class="row align-items-center my-5">
+        <div class="col-6 text-center mt-5">
+            <a type="button" class="btn btn-secondary btn-block prev hidden">Back</a>
+            
+        </div>
+        <div class="col-6 text-center mt-5">
+            <a type="button" class="btn btn-primary btn-block next">Next</a>
+        </div>
+    </div>
+
+
+ <!-- End of Buttons -->
+        
+
 
 
 
