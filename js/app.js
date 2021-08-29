@@ -20,8 +20,8 @@ jQuery(function($){
   $(".list-group .list-group-item").click(function(e) {
     $(".list-group .list-group-item").removeClass("active");
     $(e.target).addClass("active");
-    selected_ans = this.innerHTML;
-    // console.log("check " + selected_ans);
+    console.log(this.id);
+    selected_ans = this.id;
 });
 
 
@@ -44,7 +44,7 @@ $('.next').click(function() {
         $("#overlay").fadeIn(300);　
         setTimeout(function(){
             $("#overlay").fadeOut(500);
-            window.location.href = 'homepage.html';
+            window.location.href = 'welcome.html';
         },1000);
     }
 
