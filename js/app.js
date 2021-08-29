@@ -26,26 +26,48 @@ jQuery(function($){
 
 
 var step = $('.loading-container').innerWidth() / 3 + 10;
-var i = 0;
+var initial = 0;
 var i2 = 3;
 
 $('.next').click(function() {
   $('.load-bar').css('width', '+=' + step);
   $('.prev').removeClass('hidden');
-  i++;
+ 
+
+    if (initial == 0) {
+        $('#step1').addClass('hidden');
+        $('#step2').removeClass('hidden');
+    } else if (initial == 1) {
+        $('#step2').addClass('hidden');
+        $('#step3').removeClass('hidden');
+    } else if (initial == 2) {
+        $("#overlay").fadeIn(300);　
+        setTimeout(function(){
+            $("#overlay").fadeOut(500);
+            window.location.href = 'homepage.html';
+        },1000);
+    }
+
+
+  initial++;
   i2--;
-  if(i==3) {
-    $('.next').addClass('hidden');
-  }
 });
 
 $('.prev').click(function() {
   $('.load-bar').css('width', '-=' + step);
   $('.next').removeClass('hidden');
   i2++;
-  i--;
-  if(i2==3) {
+  initial--;
+
+if (initial == 0) {
     $('.prev').addClass('hidden');
-  }
+    $('#step1').removeClass('hidden');
+    $('#step2').addClass('hidden');
+} else if (initial == 1) {
+    $('#step2').removeClass('hidden');
+    $('#step3').addClass('hidden');
+} 
+
+
 });
 

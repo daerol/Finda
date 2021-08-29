@@ -501,13 +501,27 @@ form .txt_field {
 
 .homepage-times {
     position: absolute;
-    margin: 8% 0 20px 50px;
+    margin: 2% 0 20px 50px;
 }
 
 .hidden {
     display: none;
     transform: translateY(20%);
   }
+
+
+  .vertical-center {
+    height:100%;
+    width:100%;
+
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 75vh;
+    /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
