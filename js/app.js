@@ -20,8 +20,8 @@ jQuery(function($){
   $(".list-group .list-group-item").click(function(e) {
     $(".list-group .list-group-item").removeClass("active");
     $(e.target).addClass("active");
-    console.log(this.id);
-    selected_ans = this.id;
+    selected_ans = this.innerHTML;
+    // console.log("check " + selected_ans);
 });
 
 
