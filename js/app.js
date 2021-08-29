@@ -6,8 +6,15 @@ jQuery(function($){
             window.location.href = 'welcome.html';
         },1000);
     });	
-  });
 
+    $('#quiz').click(function(){
+        $("#overlay").fadeIn(300);　
+        setTimeout(function(){
+            $("#overlay").fadeOut(500);
+            window.location.href = 'quiz.html';
+        },1000);
+    });	
+  });
 
 
   $(".list-group .list-group-item").click(function(e) {
