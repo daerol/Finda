@@ -197,6 +197,37 @@ h3#subheading2 {
     
 }
 
+.review-box2 {
+    text-align: center;
+    min-width: 220px;
+    min-height: 200px;
+    font-family:serif;
+    font-style:italic;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140.62%;
+    color: #000000;
+    /* text-align: center; */
+    ;
+    
+}
+.review-box2:hover {
+    text-align: center;
+    min-width: 220px;
+    min-height: 200px;
+    font-family:serif;
+    font-style:italic;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140.62%;
+    color: #160c0c;
+    background-color: rgb(199, 181, 156);
+   
+    transition-duration: 0.5s;
+
+    
+}
+
 .contact-button {
     width: 205px;
     height: 60px;
