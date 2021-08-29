@@ -44,7 +44,7 @@ $('.next').click(function() {
         $("#overlay").fadeIn(300);　
         setTimeout(function(){
             $("#overlay").fadeOut(500);
-            window.location.href = 'welcome.html';
+            window.location.href = 'homepage.html';
         },1000);
     }
 
